@@ -10,6 +10,7 @@ export default function HogCard({
   image,
 }) {
   const [clicked, setClicked] = useState(false);
+  const [isHidden, setIsHidden] = useState(false)
 
   const hogDetails = clicked ? (
     <HogCardDetails
@@ -24,14 +25,23 @@ export default function HogCard({
     setClicked((clicked) => !clicked);
   }
 
+  function toggleHideHog() {
+    setIsHidden((isHidden) => !isHidden)
+  }
+
+  if (isHidden) return null
   return (
-    <div class="ui fluid card" onClick={toggleHogDetails}>
-      <div class="image">
+    <div className="ui card eight wide column pigTile" >
+      <div className="image">
         <img src={image} />
       </div>
-      <div class="content">
-        <div class="header">{name}</div>
-        <div class="description">{hogDetails}</div>
+      <div className="content">
+        <div className="header">{name}</div>
+        <div className="extra content">
+          <button className="ui button" onClick={toggleHideHog} >Hide Pig</button>
+          <button className="ui button"onClick={toggleHogDetails}>{!clicked ? "Show Details" : "Hide Details"}</button>
+        </div>
+        {hogDetails}
       </div>
     </div>
   );

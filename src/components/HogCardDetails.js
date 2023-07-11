@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HogCardDetails({weight, specialty, medal, greased}) {
   return (
-    <div>
+    <div className="description">
     <p>Weight: {weight}</p>
     <p>Specialty: {specialty}</p>
     <p>Medal: {medal}</p>

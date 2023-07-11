@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="21XeVkhMno4fen27EmQt" name="Page-1">
-        <mxGraphModel dx="402" dy="1009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="460" dy="1009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -28,10 +28,10 @@
                 <mxCell id="10" value="" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="7" target="12">
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;" parent="1" source="7" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5" target="14">
+                <mxCell id="15" value="" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="HogCard" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -40,14 +40,23 @@
                 <mxCell id="9" value="Filter" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="540" y="390" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="State" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="255" width="60" height="30" as="geometry"/>
+                <mxCell id="11" value="State: showGreased, sortHogs" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="255" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="HogCardDetails" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="12" value="HogCardDetails" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="340" y="530" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="Sort" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="14" value="Sort" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="140" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="showGreased&lt;br&gt;CB: setShowGreased()&lt;br&gt;Event: onClick" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="sortHogs&lt;br&gt;CB: setSortHogs()&lt;br&gt;Event: onChange" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="State: clicked&lt;br&gt;Event: onclick" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="405" width="90" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

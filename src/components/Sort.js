@@ -11,12 +11,17 @@ export default function Sort({ setSortHogs, setShowGreased }) {
     }
 
   return (
-    <div>
-        <select defaultValue={'none'} onChange={handleSort}>
+    <>
+    <div className='ui item'>
+      <label>Sort Pigs:</label>
+    </div>
+    <div className='ui item'> 
+        <select className='ui selection dropdown' defaultValue={'none'} onChange={handleSort}> 
         <option value="none">None</option>
         <option value="name">Name</option>
         <option value="weight">Weight</option>
       </select>
     </div>
+    </>
   )
 }

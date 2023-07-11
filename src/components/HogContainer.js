@@ -28,9 +28,9 @@ export default function HogContainer({ hogs }) {
 
   const hogData = sortedHogs.map((hog) => {
     return (
-     
+      <div className="ui three stackable cards">
         <HogCard
-          key={hog.name}
+          key={hog.name + hog.weight}
           name={hog.name}
           specialty={hog.specialty}
           image={hog.image}
@@ -38,15 +38,17 @@ export default function HogContainer({ hogs }) {
           medal={hog["highest medal achieved"]}
           weight={hog.weight}
         />
-
+     </div>     
     );
   });
 
   return (
-    <div>
-      <Filter showGreased={showGreased} setShowGreased={setShowGreased} />
+    <>
+    <div className="ui menu">
+      <Filter showGreased={showGreased} onCheckGreased={setShowGreased} />
       <Sort setSortHogs={setSortHogs} setShowGreased={setShowGreased} />
-      {hogData}
     </div>
+      {hogData}
+    </>
   );
 }

@@ -12,7 +12,12 @@ export default function HogCard({
   const [clicked, setClicked] = useState(false);
 
   const hogDetails = clicked ? (
-    <HogCardDetails weight={weight} specialty={specialty} medal={medal} greased={greased}/>
+    <HogCardDetails
+      weight={weight}
+      specialty={specialty}
+      medal={medal}
+      greased={greased}
+    />
   ) : null;
 
   function toggleHogDetails() {
@@ -20,10 +25,14 @@ export default function HogCard({
   }
 
   return (
-    <div onClick={toggleHogDetails}>
-      <h1>{name}</h1>
-      <img src={image} />
-      {hogDetails}
+    <div class="ui fluid card" onClick={toggleHogDetails}>
+      <div class="image">
+        <img src={image} />
+      </div>
+      <div class="content">
+        <div class="header">{name}</div>
+        <div class="description">{hogDetails}</div>
+      </div>
     </div>
   );
 }
